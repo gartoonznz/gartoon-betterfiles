@@ -4,7 +4,7 @@ export const AllteacherData: common_teacher[] =[
     {
         academic_position: "ผศ.ดร.", 
         tf_name: "กษิติศ",
-        tl_name: "ชาณเชี่ยว",
+        tl_name: "ชาณเชี่ยว eilo",
         exam_role:false
       }, { 
         academic_position: "ผศ.ดร.",
@@ -14,7 +14,7 @@ export const AllteacherData: common_teacher[] =[
       }, {
         academic_position: "ผศ.ดร.",
         tf_name: "วิลาวรรณ",
-        tl_name: "รักผกาวงศ์",
+        tl_name: "รักผกาวงศ์ ",
         exam_role:false
       }, {
         academic_position: "ผศ.ดร.",
