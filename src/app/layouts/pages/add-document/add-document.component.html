@@ -1,0 +1,155 @@
+<nav class="navbar navbar-light">
+  <a class="navbar-brand me-auto" href="#">
+    <img src="assets/img/logo.png" alt="" width="150" height="60">
+  </a>
+  <a class="navbar-brand ms-auto" href="#">
+    <img src="assets/img/user.png" alt="" width="50" height="40">
+  </a>
+</nav>
+
+<div class="container-fluid mt-2">
+  <div class="row">
+    <div class="col-3">
+      <button type="button" class="back-btn" (click)="backToAdminHome()"><img src="assets/img/back.png" alt=""
+          width="40" height="30"></button>
+      <img src="assets/img/add-doc-title.png" alt="" width="130" height="35">
+    </div>
+    <div class="col-9">
+      <hr class="line mt-3">
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-4">
+      <form>
+        <form method="post" action="#" id="#">
+          <div class="form-group files color">
+            <div class="text-topic" style="margin-left: 20px;">อัพโหลดไฟล์เอกสาร</div>
+            <input type="file" class="form-control2" multiple="">
+          </div>
+        </form>
+      </form>
+    </div>
+    <div class="col-8">
+      <div class="row mt-4">
+        <div class="col-lg-2 d-flex text-topic mt-2">เลขที่เอกสาร</div>
+        <div class="col-lg-4 d-flex">
+          <input class="form-control" placeholder="กรอกเลขที่เอกสาร">
+        </div>
+        <div class="col-lg-2 d-flex text-topic mt-2">หัวเรื่องเอกสาร</div>
+        <div class="col-lg-4 d-flex">
+          <input class="form-control" placeholder="กรอกหัวเรื่องเอกสาร">
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-lg-2 d-flex">
+          <input type="checkbox"><span style="margin-left: 5px;"> เอกสารคำสั่ง</span>
+        </div>
+        <div class="col-lg-4 d-flex">
+          <input type="checkbox"><span style="margin-left: 5px;"> เอกสารบันทึกข้อความ</span>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-lg-2 d-flex text-topic mt-2">ประเภทเอกสาร</div>
+        <div class="col-lg-4 d-flex justify-content-start">
+          <select required class="form-select" list="teacher-name" style="width: 100%;">
+            <option value="" disabled selected>เลือกประเภทเอกสาร</option>
+            <option *ngFor="let data of docType" [value]="data.doc_type_id">
+              {{data.doc_type_name}}
+            </option>
+          </select>
+
+        </div>
+        <div class="col-lg-6 d-flex text-topic mt-2">
+          <div class="col-3 mt-1">ภาคการศึกษา</div>
+          <div class="col-3">
+            <select class="form-select" list="term-list" style="width: 100%;">
+              <option value="" disabled selected>เลือกภาคการศึกษา</option>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+            </select>
+          </div>
+          <div class="mt-2">/</div>
+          <div class="col-3">
+            <select class="form-select" list="term-list" style="width: 100%;">
+              <option value="" disabled selected>เลือกปีการศึกษา</option>
+              <option value="1"> 2567 </option>
+              <option value="2"> 2566 </option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-lg-12 d-flex text-topic">
+          <div class="col-lg-2 mt-1">วันที่ออกหนังสือ</div>
+          <div class="col-lg-3 d-flex">
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-lg-1 d-flex">
+          </div>
+          <div class="col-lg-1 mt-1">เวลา</div>
+          <div class="col-lg-3 d-flex">
+            <input type="time" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-lg-12 d-flex text-topic">
+          <div class="col-lg-2 mt-1">วันที่ดำเนินการ</div>
+          <div class="col-lg-3 d-flex">
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-lg-1 d-flex">
+          </div>
+          <div class="col-lg-2 mt-1">วันหมดอายุ</div>
+          <div class="col-lg-3 d-flex">
+            <input type="date" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-lg-12 d-flex text-topic">
+          <div class="col-lg-2 mt-1">วันที่รับเข้าระบบ</div>
+          <div class="col-lg-3 d-flex">
+            <input type="date" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-lg-12 d-flex text-topic">
+          <div class="col-lg-3 mt-1">ผู้มีสิทธิเข้าถึงเอกสาร</div>
+          <div class="col-lg-3 d-flex mt-1">
+            <input type="checkbox"><span style="margin-left: 5px;"> ทั้งหมด</span>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2 ">
+        <div *ngFor="let item of common_teacher" class="flex-wrap" style="width: 17rem;">
+          <input type="checkbox" [(ngModel)]="item.exam_role"> {{item.academic_position}} {{item.tf_name}}
+          {{item.tl_name}}
+        </div>
+
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12 justify-content-end">
+          <div class="row justify-content-between">
+            <div class="col-4">
+              <button class="btn btn-cancel">ยกเลิก</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-confirm">ยืนยัน</button>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>

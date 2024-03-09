@@ -1,0 +1,102 @@
+.bg {
+    background-image: linear-gradient(to right, #7474BF 0%, #7474BF 51%, #348AC7 100%);
+    /* width: 100% !important; */
+    min-height: 100vh;
+    /* @media only screen and (max-width: 1400px){
+       height: 1400px;
+    } */
+    background-size: cover;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+}
+
+.btn-grad {
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+    /* background-size: 200% auto;
+    background-color: #fff; */
+    color: white;
+    border-radius: 60px;
+    display: block;
+    font-weight: bold;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    background-size: 200% auto;
+    background-color: #fff;
+    color: #7474BF;
+    text-decoration: none;
+}
+
+.content-box {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    min-height: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin-left: 20px; */
+
+
+
+    @media only screen and (max-width: 1600px) {
+        min-height: 630px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        min-height: 500px;
+    }
+
+    @media only screen and (max-width: 410px) {
+        min-height: 450px;
+    }
+}
+
+.content-box2 {
+    @media only screen and (max-width: 1200px) {
+        width: 90% !important;
+    }
+
+    @media only screen and (max-width: 1070px) {
+        width: 96% !important;
+    }
+
+    @media only screen and (max-width: 863px) {
+        width: 100% !important;
+    }
+}
+.content-box3 {
+    padding: 20px;
+}
+.btn-search{
+    /* margin: 10px; */
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+    background-size: 200% auto;
+    background-color: #7474BF;
+    color: white;
+    border-radius: 60px;
+    display: block;
+    font-weight: bold;
+}
+.btn-search:hover{
+    /* margin: 10px; */
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+    background-size: 200% auto;
+    background-color: #5B5B96;
+    color: white;
+    border-radius: 60px;
+    display: block;
+    font-weight: bold;
+}

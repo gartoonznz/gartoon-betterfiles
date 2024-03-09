@@ -1,0 +1,114 @@
+<nav class="navbar navbar-light">
+    <a class="navbar-brand me-auto" href="#">
+        <img src="assets/img/logo.png" alt="" width="150" height="60">
+    </a>
+    <a class="navbar-brand ms-auto" href="#">
+        <img src="assets/img/user.png" alt="" width="50" height="40">
+    </a>
+</nav>
+
+<div class="container-fluid mt-2">
+    <div class="row">
+        <div class="col-3">
+            <button type="button" class="back-btn" (click)="backToAdminHome()"><img src="assets/img/back.png" alt=""
+                    width="40" height="30"></button>
+            <img src="assets/img/document-title.png" alt="" width="150" height="35">
+        </div>
+        <div class="col-9">
+            <hr class="line mt-3">
+        </div>
+    </div>
+    <div class="row mt-2 bg">
+        <div class="col-2">
+            <div class="row mt-5">
+                <button class="btn btn-grad" (click)="allDoc()">เอกสารเข้าทั้งหมด</button>
+            </div>
+            <div class="row mt-3">
+                <button class="btn btn-grad" (click)="commonDoc()">เอกสารทั่วไป</button>
+            </div>
+            <div class="row mt-3">
+                <button class="btn btn-grad" (click)="personnalDoc()">เอกสารบุคคล</button>
+            </div>
+            <div class="row mt-3">
+                <button class="btn btn-grad" (click)="executiveDoc()">เอกสารถึงคณะผู้บริหาร</button>
+            </div>
+            <div class="row mt-3">
+                <button class="btn btn-grad" (click)="actDoc()">เอกสารโครงการต่าง ๆ</button>
+            </div>
+        </div>
+        <div class="col-10 content-box content-box2 ">
+            <div class="row">
+                <div class="col-lg-12 content-box3">
+                    <div class="row">
+                        <div class="col-lg-2 d-flex justify-content-end mt-2 text-topic">ภาคการศึกษา</div>
+                        <select class="form-select" list="term-list" style="width: 10%;">
+                            <option value="" disabled selected>เลือกภาคการศึกษา</option>
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                        </select>
+                        <div class="col-lg-1 d-flex justify-content-center text-topic mt-2">/</div>
+                        <select class="form-select" list="term-list" style="width: 15%;">
+                            <option value="" disabled selected>เลือกปีการศึกษา</option>
+                            <option value="1"> 2567 </option>
+                            <option value="2"> 2566 </option>
+                        </select>
+                        <div class="col-lg-1 d-flex justify-content-center text-topic mt-1" style="margin-left: 100px;">
+                            <input class="form-control" type="text"
+                                placeholder="&#xf002; หัวเรื่องเอกสาร, เลขที่หนังสือ" [(ngModel)]="search">
+                        </div>
+                        <div class="col-lg-2 d-flex justify-content-start text-topic mt-1" style="margin-left: 70px;">
+                            <button type="button" class="btn btn-search" (click)="find()"><i
+                                    class="fa-solid fa-magnifying-glass"></i>
+                                ค้นหา</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex flex-row justify-content-center table-responsive table-padding2 table-max-height">
+                    <table class="table table-striped mt-3 table-scroll">
+                        <thead>
+                            <tr class="text-nowrap">
+                                <th scope="col" style="width: 15%;">
+                                    เลขที่หนังสือ</th>
+                                <th scope="col" style="width: 25%;">
+                                    หัวเรื่องหนังสือ</th>
+                                <th scope="col" style="width: 15%;">วันที่
+                                </th>
+
+                                <th scope="col" style="width: 10%;">เวลา
+                                </th>
+                                <th scope="col" style="width: 16%;">ประเภทของเอกสาร
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of _docList | search:search; let i = index;" >
+                                <td>{{item.doc_no}}</td>
+                                <td>{{item.doc_head}}</td>
+                                <td>{{item.date_write}}</td>
+                                <td>{{item.time_write}}</td>
+                                <td>{{item.doc_type_name}}</td>
+                                <td><button class="btn">
+                                        <img src="assets/img/document-edit.png" alt="" width="130" height="40">
+                                    </button>
+                                </td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>

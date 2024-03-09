@@ -1,0 +1,88 @@
+.btn-grad-add {
+  background-image: linear-gradient(to right, #24C6DC 0%, #514A9D 51%, #24C6DC 100%);
+  margin: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+
+.btn-grad-cf {
+  background-image: linear-gradient(to right, #24C6DC 0%, #514A9D 51%, #24C6DC 100%);
+  margin: 10px;
+  padding: 5px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+
+.btn-grad-cc {
+  background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+
+
+  .btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  background-image: linear-gradient(to right, #24C6DC 0%, #514A9D 51%, #24C6DC 100%);
+  margin: 0px;
+  padding: 5px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+
+.btn-grad-add:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+}
+
+.textInModalHeader {
+  color: #1B4F72;
+  font-weight: bold;
+  justify-content: center;
+}
+.sticker{
+  page-break-before: always;
+  color: brown;
+  text-align: center;
+}

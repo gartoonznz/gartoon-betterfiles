@@ -1,0 +1,354 @@
+<div class="container-fluid bgPage">
+    <div class="title">{{title}}</div>
+    <div class="row contentBox contentBox2 pb-5">
+        <div class="box p-0 m-0">
+            <div class="titleCard d-flex align-items-start justify-content-center mb-3">
+                คณะผู้บริหารสาขาวิชา
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4 d-flex justify-content-end text-topic">หัวหน้าสาขา</div>
+                <div class="col-lg-8 d-flex justify-content-start">
+                    <select required class="form-select" list="teacher-name" [(ngModel)]="head" style="width: 60%;">
+                        <option value="" disabled selected>เลือกหัวหน้าสาขา</option>
+                        <option *ngFor="let data of common_teacher" [value]="data.tl_name">
+                            {{data.academic_position}} {{data.tf_name}} {{data.tl_name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-xl-3 col-md-2 col-sm-4 col-4 m-0 p-0 d-flex justify-content-end"
+                    style="margin-top: 5px !important;">
+                    วาระการดำรงตำแหน่ง</div>
+                <div
+                    class="col-xl-3 col-md-2 col-sm-5 col-5 ms-3 mx-4 m-0 p-0 margin-form-date d-flex justify-content-end">
+                    <input class="form-control form-date m-0 mb-4" type="date" id="date" name="fromDate">
+                </div>
+                <div class="col-xl-1 col-md-1 col-sm-4 col-4 p-0 d-flex justify-content-center"
+                    style="margin-top: 5px !important;">
+                    ถึง</div>
+                <div class="col-xl-3 col-md-2 col-sm-5 col-5 m-0 mx-4 p-0  d-flex justify-content-end">
+                    <input class="form-control form-date m-0  mb-4" type="date" id="date" name="toDate">
+                </div>
+            </div>
+            <hr class="line mt-3 mb-4 ">
+            <div class="row mt-4">
+                <div class="col-lg-4 d-flex justify-content-end text-topic">รองฝ่ายวิชาการ</div>
+                <div class="col-lg-8 d-flex justify-content-start">
+                    <select required class="form-select" list="teacher-name" [(ngModel)]="head2" style="width: 60%;">
+                        <option value="" disabled selected>เลือกรองฝ่ายวิชาการ</option>
+                        <option *ngFor="let data of common_teacher" [value]="data.tl_name">
+                            {{data.academic_position}} {{data.tf_name}} {{data.tl_name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-xl-3 col-md-2 col-sm-4 col-4 m-0 p-0 d-flex justify-content-end"
+                    style="margin-top: 5px !important;">
+                    วาระการดำรงตำแหน่ง</div>
+                <div
+                    class="col-xl-3 col-md-2 col-sm-5 col-5 ms-3 mx-4 m-0 p-0 margin-form-date d-flex justify-content-end">
+                    <input class="form-control form-date m-0 mb-4" type="date" id="date" name="fromDate">
+                </div>
+                <div class="col-xl-1 col-md-1 col-sm-4 col-4 p-0 d-flex justify-content-center"
+                    style="margin-top: 5px !important;">
+                    ถึง</div>
+                <div class="col-xl-3 col-md-2 col-sm-5 col-5 m-0 mx-4 p-0  d-flex justify-content-end">
+                    <input class="form-control form-date m-0  mb-4" type="date" id="date" name="toDate">
+                </div>
+            </div>
+            <hr class="line mt-3 mb-4 ">
+            <div class="row mt-4">
+                <div class="col-lg-4 d-flex justify-content-end text-topic">รองฝ่ายบริหาร</div>
+                <div class="col-lg-8 d-flex justify-content-start">
+                    <select required class="form-select" list="teacher-name" style="width: 60%;">
+                        <option value="" disabled selected>เลือกรองฝ่ายบริหาร</option>
+                        <option *ngFor="let data of common_teacher" [value]="data.tl_name">
+                            {{data.academic_position}} {{data.tf_name}} {{data.tl_name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-xl-3 col-md-2 col-sm-4 col-4 m-0 p-0 d-flex justify-content-end"
+                    style="margin-top: 5px !important;">
+                    วาระการดำรงตำแหน่ง</div>
+                <div
+                    class="col-xl-3 col-md-2 col-sm-5 col-5 ms-3 mx-4 m-0 p-0 margin-form-date d-flex justify-content-end">
+                    <input class="form-control form-date m-0 mb-4" type="date" id="date" name="fromDate">
+                </div>
+                <div class="col-xl-1 col-md-1 col-sm-4 col-4 p-0 d-flex justify-content-center"
+                    style="margin-top: 5px !important;">
+                    ถึง</div>
+                <div class="col-xl-3 col-md-2 col-sm-5 col-5 m-0 mx-4 p-0  d-flex justify-content-end">
+                    <input class="form-control form-date m-0  mb-4" type="date" id="date" name="toDate">
+                </div>
+            </div>
+            <hr class="line mt-3 mb-4 ">
+            <div class="row mt-4">
+                <div class="col-lg-4 d-flex justify-content-end text-topic">รองฝ่ายการนักศึกษาและวิเทศสัมพันธ์</div>
+                <div class="col-lg-8 d-flex justify-content-start">
+                    <select required class="form-select" list="teacher-name" style="width: 60%;">
+                        <option value="" disabled selected>เลือกรองฝ่ายการนักศึกษาและวิเทศสัมพันธ์</option>
+                        <option *ngFor="let data of common_teacher" [value]="data.tl_name">
+                            {{data.academic_position}} {{data.tf_name}} {{data.tl_name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-xl-3 col-md-2 col-sm-4 col-4 m-0 p-0 d-flex justify-content-end"
+                    style="margin-top: 5px !important;">
+                    วาระการดำรงตำแหน่ง</div>
+                <div
+                    class="col-xl-3 col-md-2 col-sm-5 col-5 ms-3 mx-4 m-0 p-0 margin-form-date d-flex justify-content-end">
+                    <input class="form-control form-date m-0 mb-4" type="date" id="date" name="fromDate">
+                </div>
+                <div class="col-xl-1 col-md-1 col-sm-4 col-4 p-0 d-flex justify-content-center"
+                    style="margin-top: 5px !important;">
+                    ถึง</div>
+                <div class="col-xl-3 col-md-2 col-sm-5 col-5 m-0 mx-4 p-0  d-flex justify-content-end">
+                    <input class="form-control form-date m-0  mb-4" type="date" id="date" name="toDate">
+                </div>
+            </div>
+            <hr class="line mt-3 mb-4 ">
+            <div class="row mt-4">
+                <div class="col-lg-4 d-flex justify-content-end text-topic">รองฝ่ายบัณฑิตศึกษา</div>
+                <div class="col-lg-8 d-flex justify-content-start">
+                    <select required class="form-select" list="teacher-name" style="width: 60%;">
+                        <option value="" disabled selected>เลือกรองฝ่ายบัณฑิตศึกษา</option>
+                        <option *ngFor="let data of common_teacher" [value]="data.tl_name">
+                            {{data.academic_position}} {{data.tf_name}} {{data.tl_name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-xl-3 col-md-2 col-sm-4 col-4 m-0 p-0 d-flex justify-content-end"
+                    style="margin-top: 5px !important;">
+                    วาระการดำรงตำแหน่ง</div>
+                <div
+                    class="col-xl-3 col-md-2 col-sm-5 col-5 ms-3 mx-4 m-0 p-0 margin-form-date d-flex justify-content-end">
+                    <input class="form-control form-date m-0 mb-4" type="date" id="date" name="fromDate">
+                </div>
+                <div class="col-xl-1 col-md-1 col-sm-4 col-4 p-0 d-flex justify-content-center"
+                    style="margin-top: 5px !important;">
+                    ถึง</div>
+                <div class="col-xl-3 col-md-2 col-sm-5 col-5 m-0 mx-4 p-0  d-flex justify-content-end">
+                    <input class="form-control form-date m-0  mb-4" type="date" id="date" name="toDate">
+                </div>
+            </div>
+            <div class="col-12 box-center">
+                <button class="btn btn-confirm m-0 mt-3 mb-5" (click)="save()"><i class="fa-solid fa-check"></i>
+                    Confirm</button>
+            </div>
+        </div>
+
+        <div class="box p-0 m-0 mt-4">
+            <div class="titleCard d-flex align-items-start justify-content-center mb-3">
+                คณะผู้บริหารโครงการปริญญาตรีภาคพิเศษ
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4 d-flex justify-content-end text-topic">ผู้อำนวยการโครงการปริญญาตรี ภาคพิเศษ</div>
+                <div class="col-lg-8 d-flex justify-content-start">
+                    <select required class="form-select" list="teacher-name" style="width: 60%;">
+                        <option value="" disabled selected>เลือกหัวหน้าสาขา</option>
+                        <option *ngFor="let data of common_teacher" [value]="data.tl_name">
+                            {{data.academic_position}} {{data.tf_name}} {{data.tl_name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-xl-3 col-md-2 col-sm-4 col-4 m-0 p-0 d-flex justify-content-end"
+                    style="margin-top: 5px !important;">
+                    วาระการดำรงตำแหน่ง</div>
+                <div
+                    class="col-xl-3 col-md-2 col-sm-5 col-5 ms-3 mx-4 m-0 p-0 margin-form-date d-flex justify-content-end">
+                    <input class="form-control form-date m-0 mb-4" type="date" id="date" name="fromDate">
+                </div>
+                <div class="col-xl-1 col-md-1 col-sm-4 col-4 p-0 d-flex justify-content-center"
+                    style="margin-top: 5px !important;">
+                    ถึง</div>
+                <div class="col-xl-3 col-md-2 col-sm-5 col-5 m-0 mx-4 p-0  d-flex justify-content-end">
+                    <input class="form-control form-date m-0  mb-4" type="date" id="date" name="toDate">
+                </div>
+            </div>
+            <hr class="line mt-3 mb-4 ">
+            <div class="row mt-4">
+                <div class="col-lg-4 d-flex justify-content-end text-topic">รองฝ่ายวิชาการ</div>
+                <div class="col-lg-8 d-flex justify-content-start">
+                    <select required class="form-select" list="teacher-name" style="width: 60%;">
+                        <option value="" disabled selected>เลือกรองฝ่ายวิชาการ</option>
+                        <option *ngFor="let data of common_teacher" [value]="data.tl_name">
+                            {{data.academic_position}} {{data.tf_name}} {{data.tl_name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-xl-3 col-md-2 col-sm-4 col-4 m-0 p-0 d-flex justify-content-end"
+                    style="margin-top: 5px !important;">
+                    วาระการดำรงตำแหน่ง</div>
+                <div
+                    class="col-xl-3 col-md-2 col-sm-5 col-5 ms-3 mx-4 m-0 p-0 margin-form-date d-flex justify-content-end">
+                    <input class="form-control form-date m-0 mb-4" type="date" id="date" name="fromDate">
+                </div>
+                <div class="col-xl-1 col-md-1 col-sm-4 col-4 p-0 d-flex justify-content-center"
+                    style="margin-top: 5px !important;">
+                    ถึง</div>
+                <div class="col-xl-3 col-md-2 col-sm-5 col-5 m-0 mx-4 p-0  d-flex justify-content-end">
+                    <input class="form-control form-date m-0  mb-4" type="date" id="date" name="toDate">
+                </div>
+            </div>
+            <hr class="line mt-3 mb-4 ">
+            <div class="row mt-4">
+                <div class="col-lg-4 d-flex justify-content-end text-topic">รองฝ่ายบริหาร</div>
+                <div class="col-lg-8 d-flex justify-content-start">
+                    <select required class="form-select" list="teacher-name" style="width: 60%;">
+                        <option value="" disabled selected>เลือกรองฝ่ายบริหาร</option>
+                        <option *ngFor="let data of common_teacher" [value]="data.tl_name">
+                            {{data.academic_position}} {{data.tf_name}} {{data.tl_name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-xl-3 col-md-2 col-sm-4 col-4 m-0 p-0 d-flex justify-content-end"
+                    style="margin-top: 5px !important;">
+                    วาระการดำรงตำแหน่ง</div>
+                <div
+                    class="col-xl-3 col-md-2 col-sm-5 col-5 ms-3 mx-4 m-0 p-0 margin-form-date d-flex justify-content-end">
+                    <input class="form-control form-date m-0 mb-4" type="date" id="date" name="fromDate">
+                </div>
+                <div class="col-xl-1 col-md-1 col-sm-4 col-4 p-0 d-flex justify-content-center"
+                    style="margin-top: 5px !important;">
+                    ถึง</div>
+                <div class="col-xl-3 col-md-2 col-sm-5 col-5 m-0 mx-4 p-0  d-flex justify-content-end">
+                    <input class="form-control form-date m-0  mb-4" type="date" id="date" name="toDate">
+                </div>
+            </div>
+            <hr class="line mt-3 mb-4 ">
+            <div class="row mt-4">
+                <div class="col-lg-4 d-flex justify-content-end text-topic">รองฝ่ายการนักศึกษาและวิเทศสัมพันธ์</div>
+                <div class="col-lg-8 d-flex justify-content-start">
+                    <select required class="form-select" list="teacher-name" style="width: 60%;">
+                        <option value="" disabled selected>เลือกรองฝ่ายการนักศึกษาและวิเทศสัมพันธ์</option>
+                        <option *ngFor="let data of common_teacher" [value]="data.tl_name">
+                            {{data.academic_position}} {{data.tf_name}} {{data.tl_name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-xl-3 col-md-2 col-sm-4 col-4 m-0 p-0 d-flex justify-content-end"
+                    style="margin-top: 5px !important;">
+                    วาระการดำรงตำแหน่ง</div>
+                <div
+                    class="col-xl-3 col-md-2 col-sm-5 col-5 ms-3 mx-4 m-0 p-0 margin-form-date d-flex justify-content-end">
+                    <input class="form-control form-date m-0 mb-4" type="date" id="date" name="fromDate">
+                </div>
+                <div class="col-xl-1 col-md-1 col-sm-4 col-4 p-0 d-flex justify-content-center"
+                    style="margin-top: 5px !important;">
+                    ถึง</div>
+                <div class="col-xl-3 col-md-2 col-sm-5 col-5 m-0 mx-4 p-0  d-flex justify-content-end">
+                    <input class="form-control form-date m-0  mb-4" type="date" id="date" name="toDate">
+                </div>
+            </div>
+            <div class="col-12 box-center">
+                <button class="btn btn-confirm m-0 mt-3 mb-5" (click)="save()"><i class="fa-solid fa-check"></i>
+                    Confirm</button>
+            </div>
+        </div>
+        <div class="box p-0 m-0 mt-4">
+            <div class="titleCard d-flex align-items-start justify-content-center mb-3">
+                คณะผู้บริหารโครงการปริญญาโทภาคพิเศษ
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4 d-flex justify-content-end text-topic">ผู้อำนวยการโครงการปริญญาโท ภาคพิเศษ</div>
+                <div class="col-lg-8 d-flex justify-content-start">
+                    <select required class="form-select" list="teacher-name" style="width: 60%;">
+                        <option value="" disabled selected>เลือกหัวหน้าสาขา</option>
+                        <option *ngFor="let data of common_teacher" [value]="data.tl_name">
+                            {{data.academic_position}} {{data.tf_name}} {{data.tl_name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-xl-3 col-md-2 col-sm-4 col-4 m-0 p-0 d-flex justify-content-end"
+                    style="margin-top: 5px !important;">
+                    วาระการดำรงตำแหน่ง</div>
+                <div
+                    class="col-xl-3 col-md-2 col-sm-5 col-5 ms-3 mx-4 m-0 p-0 margin-form-date d-flex justify-content-end">
+                    <input class="form-control form-date m-0 mb-4" type="date" id="date" name="fromDate">
+                </div>
+                <div class="col-xl-1 col-md-1 col-sm-4 col-4 p-0 d-flex justify-content-center"
+                    style="margin-top: 5px !important;">
+                    ถึง</div>
+                <div class="col-xl-3 col-md-2 col-sm-5 col-5 m-0 mx-4 p-0  d-flex justify-content-end">
+                    <input class="form-control form-date m-0  mb-4" type="date" id="date" name="toDate">
+                </div>
+            </div>
+            <hr class="line mt-3 mb-4 ">
+            <div class="row mt-4">
+                <div class="col-lg-4 d-flex justify-content-end text-topic">รองฝ่ายวิชาการ</div>
+                <div class="col-lg-8 d-flex justify-content-start">
+                    <select required class="form-select" list="teacher-name" style="width: 60%;">
+                        <option value="" disabled selected>เลือกรองฝ่ายวิชาการ</option>
+                        <option *ngFor="let data of common_teacher" [value]="data.tl_name">
+                            {{data.academic_position}} {{data.tf_name}} {{data.tl_name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-xl-3 col-md-2 col-sm-4 col-4 m-0 p-0 d-flex justify-content-end"
+                    style="margin-top: 5px !important;">
+                    วาระการดำรงตำแหน่ง</div>
+                <div
+                    class="col-xl-3 col-md-2 col-sm-5 col-5 ms-3 mx-4 m-0 p-0 margin-form-date d-flex justify-content-end">
+                    <input class="form-control form-date m-0 mb-4" type="date" id="date" name="fromDate">
+                </div>
+                <div class="col-xl-1 col-md-1 col-sm-4 col-4 p-0 d-flex justify-content-center"
+                    style="margin-top: 5px !important;">
+                    ถึง</div>
+                <div class="col-xl-3 col-md-2 col-sm-5 col-5 m-0 mx-4 p-0  d-flex justify-content-end">
+                    <input class="form-control form-date m-0  mb-4" type="date" id="date" name="toDate">
+                </div>
+            </div>
+            <hr class="line mt-3 mb-4 ">
+            <div class="row mt-4">
+                <div class="col-lg-4 d-flex justify-content-end text-topic">รองฝ่ายบริหาร</div>
+                <div class="col-lg-8 d-flex justify-content-start">
+                    <select required class="form-select" list="teacher-name" style="width: 60%;">
+                        <option value="" disabled selected>เลือกรองฝ่ายบริหาร</option>
+                        <option *ngFor="let data of common_teacher" [value]="data.tl_name">
+                            {{data.academic_position}} {{data.tf_name}} {{data.tl_name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-xl-3 col-md-2 col-sm-4 col-4 m-0 p-0 d-flex justify-content-end"
+                    style="margin-top: 5px !important;">
+                    วาระการดำรงตำแหน่ง</div>
+                <div
+                    class="col-xl-3 col-md-2 col-sm-5 col-5 ms-3 mx-4 m-0 p-0 margin-form-date d-flex justify-content-end">
+                    <input class="form-control form-date m-0 mb-4" type="date" id="date" name="fromDate">
+                </div>
+                <div class="col-xl-1 col-md-1 col-sm-4 col-4 p-0 d-flex justify-content-center"
+                    style="margin-top: 5px !important;">
+                    ถึง</div>
+                <div class="col-xl-3 col-md-2 col-sm-5 col-5 m-0 mx-4 p-0  d-flex justify-content-end">
+                    <input class="form-control form-date m-0  mb-4" type="date" id="date" name="toDate">
+                </div>
+            </div>
+            <div class="col-12 box-center">
+                <button class="btn btn-confirm m-0 mt-3 mb-5" (click)="save()"><i class="fa-solid fa-check"></i>
+                    Confirm</button>
+            </div>
+        </div> 
+    </div>
+</div>

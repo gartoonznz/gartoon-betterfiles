@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.css";
+
+
+html,
+* {
+  font-family: 'Prompt', 'FontAwesome';
+}
+
+html,
+body {
+  height: 100%;
+}
+.title {
+  font-size: 24pt;
+  font-weight: bolder;
+  position: absolute;
+  top: 23px;
+  left: 200px;
+  z-index: 97;
+  color: #1B4F72;;
+
+  @media only screen and (max-width: 1430px) {
+    left: 520px;
+    
+  }
+  @media only screen and (max-width: 1000px) {
+    left: 120px;
+    
+  }
+
+  @media only screen and (max-width: 529px) {
+    left: 50px;
+    
+  }
+
+  @media only screen and (max-width: 428px) {
+    left: 50px;
+  }
+
+  @media only screen and (max-width: 390px) {
+    left: 30px;
+  }
+}
+.bgPage {
+  background-color: #ECF2F5;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.contentBox {
+  padding-top: 100px;
+  width: 80% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-control {
+  width: 430px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 500px;
+
+  @media only screen and (max-width: 600px) {
+    width: 350px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    width: 260px;
+  }
+
+  @media only screen and (max-width: 342px) {
+    width: 180px;
+  }
+}
+.modal {
+  background-color: rgba(15, 15, 15, 0.54);
+}
+
+.modal-dialog {
+  /* position: absolute !important; */
+  float: left !important;
+  left: 50% !important;
+  top: 45% !important;
+  transform: translate(-50%, -50%) !important;
+}
+.modal-backdrop {
+  z-index: -1;
+}
