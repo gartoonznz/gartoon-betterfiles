@@ -1,4 +1,5 @@
-import { docType } from "../../../../shared/interface/doc";
+import { docType } from "../../../../../shared/interface/doc";
+
 
 export const docTypeData: docType[] =[
     {

@@ -1,5 +1,6 @@
 .bg {
-    background-image: url(../../pages/admin-home/adminHomeBG.png);
+    background-image: url(../../admin/admin-home/adminHomeBG.png);
+
     width: 100%;
     min-height: 100vh;
     /* @media only screen and (max-width: 1400px){

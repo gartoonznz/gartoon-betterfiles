@@ -13,6 +13,7 @@ export interface doc{
     term:number
     year:number
     teacher_id:number[]
+    check:boolean
 }
 export interface docType{
     doc_type_name:string

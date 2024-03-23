@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LayoutsComponent } from './layouts/layouts.component';
 import { FormsModule } from '@angular/forms';
-import { ListTeacherComponent } from './layouts/pages/list-teacher/list-teacher.component';
-import { DocumentComponent } from './layouts/pages/document/document.component';
-import { AddDocumentComponent } from './layouts/pages/add-document/add-document.component';
-import { AdminHomeComponent } from './layouts/pages/admin-home/admin-home.component';
-import { ExecutiveTeacherComponent } from './layouts/pages/executive-teacher/executive-teacher.component';
+
 import { SearchPipe } from './search.pipe';
+import { ExecutiveTeacherComponent } from './layouts/pages/admin/executive-teacher/executive-teacher.component';
+import { AdminHomeComponent } from './layouts/pages/admin/admin-home/admin-home.component';
+import { AddDocumentComponent } from './layouts/pages/admin/add-document/add-document.component';
+import { DocumentComponent } from './layouts/pages/admin/document/document.component';
+import { ListTeacherComponent } from './layouts/pages/admin/list-teacher/list-teacher.component';
+import { ExSelectRoleComponent } from './layouts/pages/exam-teacher/ex-select-role/ex-select-role.component';
+import { ExHomeComponent } from './layouts/pages/exam-teacher/ex-home/ex-home.component';
 
 
 @NgModule({
@@ -24,13 +27,16 @@ import { SearchPipe } from './search.pipe';
     DocumentComponent,
     ExecutiveTeacherComponent,
     SearchPipe,
-   
+    ExSelectRoleComponent,
+    ExHomeComponent
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

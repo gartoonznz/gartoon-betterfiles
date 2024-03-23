@@ -1,0 +1,136 @@
+.bg {
+    background-image: linear-gradient(to right, #7474BF 0%, #7474BF 51%, #348AC7 100%);
+    width: 100% !important;
+    height: 100% !important;
+
+  
+    /* @media only screen and (max-width: 1400px){
+       height: 1400px;
+    } */
+    background-size: cover;
+}
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+.btn-picking {
+    background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow:0 0  10px #eee;
+    border-radius: 10px;
+    display: block;
+    width: 500px;
+    height: 250px;
+  
+    &:hover {
+        background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    }
+  
+    @media only screen and (max-width: 873px) {
+      width: 250px;
+      height: 130px;
+    }
+  
+    @media only screen and (max-width: 410px) {
+      width: 200px;
+      height: 100px;
+    }
+  
+    @media only screen and (max-width: 328px) {
+      width: 150px;
+      height: 100px;
+    }
+  }
+  .box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .box-center2 {
+    min-height: 60vh;
+  }
+  .text-title {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  
+    @media only screen and (max-width: 605px) {
+      font-size: 14pt;
+      padding: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+    @media only screen and (max-width: 410px) {
+      font-size: 12pt;
+    }
+  }
+  .logo {
+    font-size: 60pt;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  
+    @media only screen and (max-width: 873px) {
+      font-size: 55pt;
+    }
+  
+    @media only screen and (max-width: 410px) {
+      font-size: 45pt;
+    }
+  
+    @media only screen and (max-width: 328px) {
+      font-size: 35pt;
+  
+    }
+  
+  }
+  .text-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18pt;
+    font-weight: bolder;
+  
+    @media only screen and (max-width: 873px) {
+      font-size: 16pt;
+    }
+  
+    @media only screen and (max-width: 410px) {
+      margin-top: 15px !important;
+    }
+  
+    @media only screen and (max-width: 328px) {
+      font-size: 12pt;
+  
+    }
+  
+  }
+  

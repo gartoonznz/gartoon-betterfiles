@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { docType } from '../../../shared/interface/doc';
-import { docData } from '../document/dummy/doc-data';
 import { docTypeData } from '../document/dummy/doc-type';
-import { common_teacher } from '../../../shared/interface/teacher';
-import { teacherData } from '../executive-teacher/dummy/exam-teacher-data';
 import { AllteacherData } from '../executive-teacher/dummy/all-teacher-data';
+import { common_teacher } from '../../../../shared/interface/teacher';
+import { docType } from '../../../../shared/interface/doc';
 
 @Component({
   selector: 'app-add-document',
@@ -15,6 +13,7 @@ import { AllteacherData } from '../executive-teacher/dummy/all-teacher-data';
 export class AddDocumentComponent {
   docType!: docType[]
   common_teacher!: common_teacher[]
+  expType_id!:number
   
   constructor(private router: Router){
     this.docType = docTypeData

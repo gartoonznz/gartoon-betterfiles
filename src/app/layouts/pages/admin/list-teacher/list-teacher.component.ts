@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { common_teacher } from '../../../shared/interface/teacher';
+import { common_teacher } from '../../../../shared/interface/teacher';
+
 
 const RECEIVEINFO: common_teacher[] = [
   {

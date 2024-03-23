@@ -100,9 +100,14 @@
           </div>
           <div class="col-lg-1 d-flex">
           </div>
-          <div class="col-lg-2 mt-1">วันหมดอายุ</div>
+          <div class="col-lg-1 mt-1">วันหมดอายุ</div>
           <div class="col-lg-3 d-flex">
-            <input type="date" class="form-control">
+            <select class="form-select form-control" [(ngModel)]="expType_id">
+              <optgroup label="เลือกประเภทการหมดอายุของเอกสาร">
+                <option [value]="1"><span></span>หมดอายุตามวาระหัวหน้าสาขา</option>
+                <option [value]="2"><span></span>กำหนดเอง</option>
+              </optgroup>
+            </select>
           </div>
         </div>
       </div>
@@ -110,6 +115,12 @@
         <div class="col-lg-12 d-flex text-topic">
           <div class="col-lg-2 mt-1">วันที่รับเข้าระบบ</div>
           <div class="col-lg-3 d-flex">
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-lg-1 d-flex">
+          </div>
+          <div *ngIf="expType_id == 2" class="col-lg-2 mt-1" style="color: brown;">ระบุวันหมดอายุ*</div>
+          <div *ngIf="expType_id == 2" class="col-lg-3 d-flex">
             <input type="date" class="form-control">
           </div>
         </div>

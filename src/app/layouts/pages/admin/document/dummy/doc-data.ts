@@ -1,4 +1,5 @@
-import { doc } from "../../../../shared/interface/doc";
+import { doc } from "../../../../../shared/interface/doc";
+
 
 export const docData: doc[] = [
     { 
@@ -16,6 +17,7 @@ export const docData: doc[] = [
         term:2,
         year:2563,
         teacher_id:[1,2,3],
+        check:false
     },
     { 
         doc_no:'ศธ 1424/2563',
@@ -32,6 +34,7 @@ export const docData: doc[] = [
         term:2,
         year:2563,
         teacher_id:[1,2,3],
+        check:false
     },
     { 
         doc_no:'598/2561',
@@ -48,6 +51,7 @@ export const docData: doc[] = [
         term:2,
         year:2561,
         teacher_id:[1,2,3],
+        check:false
     },
     { 
         doc_no:'ศธ 0516/2564',
@@ -64,6 +68,7 @@ export const docData: doc[] = [
         term:1,
         year:2564,
         teacher_id:[1,2,3],
+        check:false
     },
     { 
         doc_no:'ศธ 0502/2566',
@@ -80,6 +85,7 @@ export const docData: doc[] = [
         term:2,
         year:2566,
         teacher_id:[1,2,3],
+        check:false
     },
     { 
         doc_no:'ศธ 6726/2566',
@@ -96,6 +102,7 @@ export const docData: doc[] = [
         term:2,
         year:2566,
         teacher_id:[1,2,3],
+        check:false
     },
     
 ]

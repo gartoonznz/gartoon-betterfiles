@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { common_teacher } from '../../../shared/interface/teacher';
-import { AlertService } from '../../../shared/services/alert.service';
+import { AlertService } from '../../../../shared/services/alert.service';
+import { common_teacher } from '../../../../shared/interface/teacher';
+
 
 
 const RECEIVEINFO: common_teacher[] = [

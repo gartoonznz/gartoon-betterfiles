@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { doc } from '../../../shared/interface/doc';
+
 import { docData } from './dummy/doc-data';
-import { SwalService } from '../../../shared/services/swal.service';
+import { SwalService } from '../../../../shared/services/swal.service';
+import { doc } from '../../../../shared/interface/doc';
+
 
 @Component({
   selector: 'app-document',

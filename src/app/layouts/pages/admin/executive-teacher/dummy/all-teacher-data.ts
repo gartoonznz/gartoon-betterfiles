@@ -1,10 +1,11 @@
-import { common_teacher } from "../../../../shared/interface/teacher";
+import { common_teacher } from "../../../../../shared/interface/teacher";
+
 
 export const AllteacherData: common_teacher[] =[
     {
         academic_position: "ผศ.ดร.", 
         tf_name: "กษิติศ",
-        tl_name: "ชาณเชี่ยว eilo",
+        tl_name: "ชาณเชี่ยว",
         exam_role:false
       }, { 
         academic_position: "ผศ.ดร.",
